@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: techstore-config
+  namespace: techstore
+data:
+  NODE_ENV: "production"
+  PORT: "5000"
+  POSTGRES_HOST: "postgres"
+  POSTGRES_PORT: "5432"
+  POSTGRES_DB: "techstoredb"
+  MONGO_INITDB_DATABASE: "techstore_audit"
